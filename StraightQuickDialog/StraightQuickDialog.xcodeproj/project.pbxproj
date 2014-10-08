@@ -14,6 +14,12 @@
 		9D03742819E4E3360069EA9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D03742719E4E3360069EA9F /* Images.xcassets */; };
 		9D03742B19E4E3360069EA9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D03742919E4E3360069EA9F /* LaunchScreen.xib */; };
 		9D03743719E4E3360069EA9F /* StraightQuickDialogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03743619E4E3360069EA9F /* StraightQuickDialogTests.m */; };
+		9D03744319E4E61F0069EA9F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03744219E4E61F0069EA9F /* RootViewController.m */; };
+		9D03744719E4E7EB0069EA9F /* StraightSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03744619E4E7EB0069EA9F /* StraightSection.m */; };
+		9D03744A19E4E80A0069EA9F /* StraightElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03744919E4E80A0069EA9F /* StraightElement.m */; };
+		9D03745019E4ED0B0069EA9F /* NSMutableString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03744F19E4ED0B0069EA9F /* NSMutableString+Extension.m */; };
+		9D03745519E52EAD0069EA9F /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03745419E52EAD0069EA9F /* EntryViewController.m */; };
+		9D03745819E53C470069EA9F /* EntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03745719E53C470069EA9F /* EntryTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,19 @@
 		9D03743019E4E3360069EA9F /* StraightQuickDialogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StraightQuickDialogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D03743519E4E3360069EA9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D03743619E4E3360069EA9F /* StraightQuickDialogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StraightQuickDialogTests.m; sourceTree = "<group>"; };
+		9D03744119E4E61F0069EA9F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = StraightQuickDialog/ViewController/RootViewController.h; sourceTree = "<group>"; };
+		9D03744219E4E61F0069EA9F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = StraightQuickDialog/ViewController/RootViewController.m; sourceTree = "<group>"; };
+		9D03744519E4E7EB0069EA9F /* StraightSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StraightSection.h; path = StraightQuickDialog/Model/StraightSection.h; sourceTree = "<group>"; };
+		9D03744619E4E7EB0069EA9F /* StraightSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StraightSection.m; path = StraightQuickDialog/Model/StraightSection.m; sourceTree = "<group>"; };
+		9D03744819E4E80A0069EA9F /* StraightElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StraightElement.h; path = StraightQuickDialog/Model/StraightElement.h; sourceTree = "<group>"; };
+		9D03744919E4E80A0069EA9F /* StraightElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StraightElement.m; path = StraightQuickDialog/Model/StraightElement.m; sourceTree = "<group>"; };
+		9D03744B19E4EAE70069EA9F /* KeywordConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KeywordConst.h; path = StraightQuickDialog/Const/KeywordConst.h; sourceTree = "<group>"; };
+		9D03744E19E4ED0B0069EA9F /* NSMutableString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+Extension.h"; path = "StraightQuickDialog/Extension/NSMutableString+Extension.h"; sourceTree = "<group>"; };
+		9D03744F19E4ED0B0069EA9F /* NSMutableString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableString+Extension.m"; path = "StraightQuickDialog/Extension/NSMutableString+Extension.m"; sourceTree = "<group>"; };
+		9D03745319E52EAD0069EA9F /* EntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntryViewController.h; path = StraightQuickDialog/ViewController/EntryViewController.h; sourceTree = "<group>"; };
+		9D03745419E52EAD0069EA9F /* EntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntryViewController.m; path = StraightQuickDialog/ViewController/EntryViewController.m; sourceTree = "<group>"; };
+		9D03745619E53C470069EA9F /* EntryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntryTableViewCell.h; path = StraightQuickDialog/ViewController/EntryTableViewCell.h; sourceTree = "<group>"; };
+		9D03745719E53C470069EA9F /* EntryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntryTableViewCell.m; path = StraightQuickDialog/ViewController/EntryTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +82,10 @@
 		9D03740E19E4E3360069EA9F = {
 			isa = PBXGroup;
 			children = (
+				9D03744D19E4EBD80069EA9F /* Extension */,
+				9D03744C19E4EB390069EA9F /* Const */,
+				9D03744419E4E79E0069EA9F /* Model */,
+				9D03744019E4E5E90069EA9F /* ViewController */,
 				9D03741919E4E3360069EA9F /* StraightQuickDialog */,
 				9D03743319E4E3360069EA9F /* StraightQuickDialogTests */,
 				9D03741819E4E3360069EA9F /* Products */,
@@ -117,6 +140,63 @@
 				9D03743519E4E3360069EA9F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9D03744019E4E5E90069EA9F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D03745219E52E740069EA9F /* UsageExample */,
+				9D03744119E4E61F0069EA9F /* RootViewController.h */,
+				9D03744219E4E61F0069EA9F /* RootViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		9D03744419E4E79E0069EA9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D03744519E4E7EB0069EA9F /* StraightSection.h */,
+				9D03744619E4E7EB0069EA9F /* StraightSection.m */,
+				9D03744819E4E80A0069EA9F /* StraightElement.h */,
+				9D03744919E4E80A0069EA9F /* StraightElement.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9D03744C19E4EB390069EA9F /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				9D03744B19E4EAE70069EA9F /* KeywordConst.h */,
+			);
+			name = Const;
+			sourceTree = "<group>";
+		};
+		9D03744D19E4EBD80069EA9F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9D03744E19E4ED0B0069EA9F /* NSMutableString+Extension.h */,
+				9D03744F19E4ED0B0069EA9F /* NSMutableString+Extension.m */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		9D03745219E52E740069EA9F /* UsageExample */ = {
+			isa = PBXGroup;
+			children = (
+				9D03745919E53C560069EA9F /* Cell */,
+				9D03745319E52EAD0069EA9F /* EntryViewController.h */,
+				9D03745419E52EAD0069EA9F /* EntryViewController.m */,
+			);
+			name = UsageExample;
+			sourceTree = "<group>";
+		};
+		9D03745919E53C560069EA9F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9D03745619E53C470069EA9F /* EntryTableViewCell.h */,
+				9D03745719E53C470069EA9F /* EntryTableViewCell.m */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D03744A19E4E80A0069EA9F /* StraightElement.m in Sources */,
+				9D03745519E52EAD0069EA9F /* EntryViewController.m in Sources */,
 				9D03742319E4E3360069EA9F /* ViewController.m in Sources */,
+				9D03744719E4E7EB0069EA9F /* StraightSection.m in Sources */,
 				9D03742019E4E3360069EA9F /* AppDelegate.m in Sources */,
+				9D03745019E4ED0B0069EA9F /* NSMutableString+Extension.m in Sources */,
+				9D03744319E4E61F0069EA9F /* RootViewController.m in Sources */,
+				9D03745819E53C470069EA9F /* EntryTableViewCell.m in Sources */,
 				9D03741D19E4E3360069EA9F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StraightQuickDialog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StraightQuickDialog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
