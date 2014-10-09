@@ -13,6 +13,7 @@
 @synthesize headerText;
 @synthesize footerText;
 @synthesize elementArray;
+@synthesize sectionIndex;
 
 
 -(id)init{

@@ -20,6 +20,8 @@
 		9D03745019E4ED0B0069EA9F /* NSMutableString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03744F19E4ED0B0069EA9F /* NSMutableString+Extension.m */; };
 		9D03745519E52EAD0069EA9F /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03745419E52EAD0069EA9F /* EntryViewController.m */; };
 		9D03745819E53C470069EA9F /* EntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03745719E53C470069EA9F /* EntryTableViewCell.m */; };
+		9D03745F19E62EB10069EA9F /* UIToolbar+IndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03745E19E62EB10069EA9F /* UIToolbar+IndexPath.m */; };
+		9D03746219E67A300069EA9F /* ElementTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03746119E67A300069EA9F /* ElementTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,10 @@
 		9D03745419E52EAD0069EA9F /* EntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntryViewController.m; path = StraightQuickDialog/ViewController/EntryViewController.m; sourceTree = "<group>"; };
 		9D03745619E53C470069EA9F /* EntryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntryTableViewCell.h; path = StraightQuickDialog/ViewController/EntryTableViewCell.h; sourceTree = "<group>"; };
 		9D03745719E53C470069EA9F /* EntryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntryTableViewCell.m; path = StraightQuickDialog/ViewController/EntryTableViewCell.m; sourceTree = "<group>"; };
+		9D03745D19E62EB10069EA9F /* UIToolbar+IndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIToolbar+IndexPath.h"; path = "StraightQuickDialog/Extension/UIToolbar+IndexPath.h"; sourceTree = "<group>"; };
+		9D03745E19E62EB10069EA9F /* UIToolbar+IndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIToolbar+IndexPath.m"; path = "StraightQuickDialog/Extension/UIToolbar+IndexPath.m"; sourceTree = "<group>"; };
+		9D03746019E67A300069EA9F /* ElementTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ElementTableViewCell.h; path = StraightQuickDialog/ViewController/ElementTableViewCell.h; sourceTree = "<group>"; };
+		9D03746119E67A300069EA9F /* ElementTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ElementTableViewCell.m; path = StraightQuickDialog/ViewController/ElementTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +182,8 @@
 			children = (
 				9D03744E19E4ED0B0069EA9F /* NSMutableString+Extension.h */,
 				9D03744F19E4ED0B0069EA9F /* NSMutableString+Extension.m */,
+				9D03745D19E62EB10069EA9F /* UIToolbar+IndexPath.h */,
+				9D03745E19E62EB10069EA9F /* UIToolbar+IndexPath.m */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -195,6 +203,8 @@
 			children = (
 				9D03745619E53C470069EA9F /* EntryTableViewCell.h */,
 				9D03745719E53C470069EA9F /* EntryTableViewCell.m */,
+				9D03746019E67A300069EA9F /* ElementTableViewCell.h */,
+				9D03746119E67A300069EA9F /* ElementTableViewCell.m */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -300,8 +310,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D03744A19E4E80A0069EA9F /* StraightElement.m in Sources */,
+				9D03745F19E62EB10069EA9F /* UIToolbar+IndexPath.m in Sources */,
 				9D03745519E52EAD0069EA9F /* EntryViewController.m in Sources */,
 				9D03742319E4E3360069EA9F /* ViewController.m in Sources */,
+				9D03746219E67A300069EA9F /* ElementTableViewCell.m in Sources */,
 				9D03744719E4E7EB0069EA9F /* StraightSection.m in Sources */,
 				9D03742019E4E3360069EA9F /* AppDelegate.m in Sources */,
 				9D03745019E4ED0B0069EA9F /* NSMutableString+Extension.m in Sources */,

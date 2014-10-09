@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ElementTableViewCell.h"
 
-@interface EntryTableViewCell : UITableViewCell{
+@interface EntryTableViewCell : ElementTableViewCell{
     @private
     
 }

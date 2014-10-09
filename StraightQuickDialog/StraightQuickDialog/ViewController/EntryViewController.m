@@ -8,19 +8,35 @@
 
 #import "EntryViewController.h"
 #import "EntryTableViewCell.h"
-
-@interface EntryViewController (){
+#import "UIToolbar+IndexPath.h"
+#import "StraightSection.h"
+#import "StraightElement.h"
+@interface EntryViewController ()<UITextFieldDelegate>{
     @private
     UISegmentedControl*_prevNext;
     UIToolbar*keyboardToolBar;
+    
+    
+    StraightSection*sectionData;
+    UITextField*currentTextField;
+    
+
 }
 
 @end
 
 @implementation EntryViewController
 
+-(id)initWithCoder:(NSCoder *)aDecoder{
+    self=[super initWithCoder:aDecoder];
+    currentTextField=nil;
+    [self initPrivateField];
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     keyboardToolBar=[self createActionBar];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -42,20 +58,22 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return [sectionData.elementArray count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     EntryTableViewCell* cell =(EntryTableViewCell*) [tableView dequeueReusableCellWithIdentifier:@"EntryCellIdentifer" forIndexPath:indexPath];
+    StraightElement*element=[sectionData.elementArray objectAtIndex:indexPath.row];
+    cell.element=element;
+    
     cell.textField.placeholder=@"Place Holder";
-    cell.textField.inputView=keyboardToolBar;
+    cell.textField.delegate=self;
+    cell.textField.inputAccessoryView=keyboardToolBar;
+    cell.textLabel.text=element.title;
     cell.textField.keyboardType=UIKeyboardTypeDefault;
     cell.textField.keyboardAppearance=UIKeyboardAppearanceDark;
-    
-    
-    
-    
+
     // Configure the cell...
     
     return cell;
@@ -106,7 +124,48 @@
 }
 */
 
-#pragma <#arguments#>
+#pragma selector messages
+
+- (void)handleActionBarPreviousNext:(UISegmentedControl *)control {
+    UITextField*tf=(UITextField*)keyboardToolBar.superview;
+    [tf resignFirstResponder];
+    BOOL isPre=control.selectedSegmentIndex==0;
+    NSIndexPath*targetCellIndexPath=nil;
+    if (isPre) {
+        targetCellIndexPath=[self findPreCellIndexPath:keyboardToolBar.indexPath];
+    }
+    else{
+        targetCellIndexPath=[self findNextCellIndexPath:keyboardToolBar.indexPath];
+    }
+    [self.tableView scrollToRowAtIndexPath:targetCellIndexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+    EntryTableViewCell*cell=(EntryTableViewCell*)[self.tableView cellForRowAtIndexPath:targetCellIndexPath];
+    [cell.textField becomeFirstResponder];
+    
+}
+- (BOOL)handleActionBarDone:(UIBarButtonItem *)doneButton {
+    
+    [currentTextField resignFirstResponder];
+    return NO;
+}
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField{
+    
+    UIView*contentView=(UITableViewCell*)textField.superview;
+    while (![contentView isKindOfClass:[UITableViewCell class]]) {
+        contentView=contentView.superview;
+    }
+    EntryTableViewCell*cell=(EntryTableViewCell*)contentView;
+    keyboardToolBar.indexPath=cell.element.indexPath;
+    currentTextField=textField;
+    
+
+}
+-(void)textFieldDidEndEditing:(UITextField *)textField{
+
+    currentTextField=nil;
+}
+
+#pragma private messages
 -(UIToolbar *)createActionBar {
     UIToolbar *actionBar = [[UIToolbar alloc] init];
     [actionBar sizeToFit];
@@ -117,7 +176,7 @@
     
     _prevNext = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:NSLocalizedString(@"Previous", @""), NSLocalizedString(@"Next", @""), nil]];
     _prevNext.momentary = YES;
-    _prevNext.segmentedControlStyle = UISegmentedControlStyleBar;
+    //_prevNext.segmentedControlStyle = UISegmentedControlStyleBar;
     _prevNext.tintColor = actionBar.tintColor;
     [_prevNext addTarget:self action:@selector(handleActionBarPreviousNext:) forControlEvents:UIControlEventValueChanged];
     UIBarButtonItem *prevNextWrapper = [[UIBarButtonItem alloc] initWithCustomView:_prevNext];
@@ -126,5 +185,42 @@
     
     return actionBar;
 }
+-(NSIndexPath*)findPreCellIndexPath:(NSIndexPath*)indexPath{
+    if (0==indexPath.row) {
+        return indexPath;
+    }
+    return [NSIndexPath indexPathForRow:indexPath.row-1 inSection:0];
+}
+-(NSIndexPath*)findNextCellIndexPath:(NSIndexPath*)indexPath{
+    if (sectionData.elementArray.count-1==indexPath.row) {
+        return indexPath;
+    }
+    return [NSIndexPath indexPathForRow:indexPath.row+1 inSection:0];
+
+}
+
+-(void)initPrivateField{
+    sectionData=[[StraightSection alloc]init];
+    sectionData.sectionIndex=0;
+    for (NSInteger idx=0; idx<5; idx++) {
+        NSString*title=[NSString stringWithFormat:@"EntryElemnt %d",idx];
+        StraightElement*ele=[StraightElement straightElement:title  target:self selector:nil];
+        ele.indexPath=[NSIndexPath indexPathForRow:idx inSection:sectionData.sectionIndex];
+        [sectionData.elementArray addObject:ele];
+    }
+    
+    
+}
+
+-(UIView*)findCurrentCell{
+    
+
+    UIView*cell=(UIView*)keyboardToolBar.superview;
+    while (![cell isKindOfClass:[EntryTableViewCell class]]) {
+        cell=cell.superview;
+    }
+    return cell;
+}
+
 
 @end

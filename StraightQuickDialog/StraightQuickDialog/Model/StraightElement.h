@@ -15,6 +15,7 @@
 
 @property(nonatomic,strong)NSString*title;
 @property(nonatomic,strong)NSInvocation*invocation;
+@property(nonatomic,strong)NSIndexPath*indexPath;
 
 +(StraightElement*)straightElement:(NSString*)title target:(id)target selector:(SEL)selector;
 

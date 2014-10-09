@@ -14,6 +14,7 @@
 
 @property(nonatomic,strong)NSString*headerText;
 @property(nonatomic,strong)NSString*footerText;
+@property(nonatomic,assign)NSInteger sectionIndex;
 
 @property(nonatomic,strong)NSMutableArray*elementArray;
 @end

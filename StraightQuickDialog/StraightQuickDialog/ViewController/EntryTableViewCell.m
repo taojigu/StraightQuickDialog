@@ -14,6 +14,28 @@
 
 - (void)awakeFromNib {
     // Initialization code
+
+}
+
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    //UIFont*titleFont=self.textLabel.font;
+    CGRect titleRect=self.textLabel.frame;
+    CGSize sz=titleRect.size;
+    sz.width=180;
+    titleRect.size=sz;
+    self.textLabel.frame=titleRect;
+    /*
+    
+    NSMutableDictionary*attriDict=[[NSMutableDictionary alloc]init];
+    [attriDict setObject:titleFont forKey:NSFontAttributeName];
+    CGSize sz=CGSizeMake(200, MAXFLOAT);
+    
+    CGRect rect=[self.textLabel.text boundingRectWithSize:sz options:NSStringDrawingTruncatesLastVisibleLine|NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin attributes:attriDict context:nil];
+     */
+    
+
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
