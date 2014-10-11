@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+@class StraightElement;
+@class PickerElement;
+
 @interface StraightSection : NSObject{
     
 }
@@ -17,4 +20,9 @@
 @property(nonatomic,assign)NSInteger sectionIndex;
 
 @property(nonatomic,strong)NSMutableArray*elementArray;
+
+-(PickerElement*)createPickerElement:(NSInteger)rowIndex title:(NSString*)title;
+
+
+
 @end

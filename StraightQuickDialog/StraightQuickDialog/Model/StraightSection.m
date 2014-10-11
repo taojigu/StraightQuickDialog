@@ -8,6 +8,9 @@
 
 #import "StraightSection.h"
 #import "NSMutableString+Extension.h"
+#import "StraightElement.h"
+#import "PickerElement.h"
+#import <UIKit/UIKit.h>
 
 @implementation StraightSection
 @synthesize headerText;
@@ -38,6 +41,12 @@
         [buffer appendFormat:@"The elmement is %@",self.elementArray];
     }
     return buffer;
+}
+-(PickerElement*)createPickerElement:(NSInteger)rowIndex title:(NSString*)title{
+    PickerElement*element=[[PickerElement alloc]init];
+    element.indexPath=[NSIndexPath indexPathForRow:rowIndex inSection:self.sectionIndex];
+    element.title=title;
+    return element;
 }
 
 @end

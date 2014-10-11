@@ -10,6 +10,7 @@
 #import "StraightSection.h"
 #import "StraightElement.h"
 #import "EntryViewController.h"
+#import "PickerTableViewController.h"
 @interface RootViewController (){
     @private
     NSMutableArray*sectionArray;
@@ -145,6 +146,11 @@
     [self.navigationController pushViewController:evc animated:YES];
     
 }
+-(void)pushPickerViewController{
+    UIStoryboard*storyboar=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    PickerTableViewController*pvc=[storyboar instantiateViewControllerWithIdentifier:@"PickerTableViewController"];
+    [self.navigationController pushViewController:pvc animated:YES];
+}
 #pragma private messages
 -(void)initPrivateField{
     
@@ -174,11 +180,16 @@
 -(void)addUsageExampleSection{
     
     StraightSection*sc=[[StraightSection alloc]init];
+    [sectionArray addObject:sc];
+    
     sc.headerText=@"USAGE EXAMPLE";
     StraightElement*entryElement=[self straightElement:@"Entry" selector:@selector(pushEntryViewController)];
     [sc.elementArray addObject:entryElement];
-
-    [sectionArray addObject:sc];
+    
+    
+    StraightElement*pickElement=[StraightElement straightElement:@"Picker" target:self selector:@selector(pushPickerViewController)];
+    [sc.elementArray addObject:pickElement];
+    
     
 }
 -(void)addJsonSampleSection{

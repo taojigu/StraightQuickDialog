@@ -22,6 +22,12 @@
 		9D03745819E53C470069EA9F /* EntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03745719E53C470069EA9F /* EntryTableViewCell.m */; };
 		9D03745F19E62EB10069EA9F /* UIToolbar+IndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03745E19E62EB10069EA9F /* UIToolbar+IndexPath.m */; };
 		9D03746219E67A300069EA9F /* ElementTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03746119E67A300069EA9F /* ElementTableViewCell.m */; };
+		9D03746519E77CC50069EA9F /* PickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03746419E77CC50069EA9F /* PickerTableViewController.m */; };
+		9D03746819E7AC410069EA9F /* PickerElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03746719E7AC410069EA9F /* PickerElement.m */; };
+		9D03746C19E7B3FE0069EA9F /* ElementPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03746B19E7B3FE0069EA9F /* ElementPickerView.m */; };
+		9D03746F19E7BAD80069EA9F /* PickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03746E19E7BAD80069EA9F /* PickerTableViewCell.m */; };
+		9D03747219E7D8D50069EA9F /* UIKitUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03747119E7D8D50069EA9F /* UIKitUtility.m */; };
+		9D03747619E7DABE0069EA9F /* UIPickerView+InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D03747519E7DABE0069EA9F /* UIPickerView+InputView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,18 @@
 		9D03745E19E62EB10069EA9F /* UIToolbar+IndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIToolbar+IndexPath.m"; path = "StraightQuickDialog/Extension/UIToolbar+IndexPath.m"; sourceTree = "<group>"; };
 		9D03746019E67A300069EA9F /* ElementTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ElementTableViewCell.h; path = StraightQuickDialog/ViewController/ElementTableViewCell.h; sourceTree = "<group>"; };
 		9D03746119E67A300069EA9F /* ElementTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ElementTableViewCell.m; path = StraightQuickDialog/ViewController/ElementTableViewCell.m; sourceTree = "<group>"; };
+		9D03746319E77CC50069EA9F /* PickerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PickerTableViewController.h; path = StraightQuickDialog/ViewController/PickerTableViewController.h; sourceTree = "<group>"; };
+		9D03746419E77CC50069EA9F /* PickerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PickerTableViewController.m; path = StraightQuickDialog/ViewController/PickerTableViewController.m; sourceTree = "<group>"; };
+		9D03746619E7AC410069EA9F /* PickerElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PickerElement.h; path = StraightQuickDialog/Model/PickerElement.h; sourceTree = "<group>"; };
+		9D03746719E7AC410069EA9F /* PickerElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PickerElement.m; path = StraightQuickDialog/Model/PickerElement.m; sourceTree = "<group>"; };
+		9D03746A19E7B3FE0069EA9F /* ElementPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ElementPickerView.h; path = StraightQuickDialog/ElementView/ElementPickerView.h; sourceTree = "<group>"; };
+		9D03746B19E7B3FE0069EA9F /* ElementPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ElementPickerView.m; path = StraightQuickDialog/ElementView/ElementPickerView.m; sourceTree = "<group>"; };
+		9D03746D19E7BAD80069EA9F /* PickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PickerTableViewCell.h; path = StraightQuickDialog/ViewController/PickerTableViewCell.h; sourceTree = "<group>"; };
+		9D03746E19E7BAD80069EA9F /* PickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PickerTableViewCell.m; path = StraightQuickDialog/ViewController/PickerTableViewCell.m; sourceTree = "<group>"; };
+		9D03747019E7D8D50069EA9F /* UIKitUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIKitUtility.h; path = StraightQuickDialog/Utility/UIKitUtility.h; sourceTree = "<group>"; };
+		9D03747119E7D8D50069EA9F /* UIKitUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIKitUtility.m; path = StraightQuickDialog/Utility/UIKitUtility.m; sourceTree = "<group>"; };
+		9D03747419E7DABE0069EA9F /* UIPickerView+InputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIPickerView+InputView.h"; path = "StraightQuickDialog/Extension/UIPickerView+InputView.h"; sourceTree = "<group>"; };
+		9D03747519E7DABE0069EA9F /* UIPickerView+InputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIPickerView+InputView.m"; path = "StraightQuickDialog/Extension/UIPickerView+InputView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +106,8 @@
 		9D03740E19E4E3360069EA9F = {
 			isa = PBXGroup;
 			children = (
+				9D03747319E7D8E20069EA9F /* Utility */,
+				9D03746919E7B3C70069EA9F /* ElementView */,
 				9D03744D19E4EBD80069EA9F /* Extension */,
 				9D03744C19E4EB390069EA9F /* Const */,
 				9D03744419E4E79E0069EA9F /* Model */,
@@ -165,6 +185,8 @@
 				9D03744619E4E7EB0069EA9F /* StraightSection.m */,
 				9D03744819E4E80A0069EA9F /* StraightElement.h */,
 				9D03744919E4E80A0069EA9F /* StraightElement.m */,
+				9D03746619E7AC410069EA9F /* PickerElement.h */,
+				9D03746719E7AC410069EA9F /* PickerElement.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -184,6 +206,8 @@
 				9D03744F19E4ED0B0069EA9F /* NSMutableString+Extension.m */,
 				9D03745D19E62EB10069EA9F /* UIToolbar+IndexPath.h */,
 				9D03745E19E62EB10069EA9F /* UIToolbar+IndexPath.m */,
+				9D03747419E7DABE0069EA9F /* UIPickerView+InputView.h */,
+				9D03747519E7DABE0069EA9F /* UIPickerView+InputView.m */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -194,6 +218,8 @@
 				9D03745919E53C560069EA9F /* Cell */,
 				9D03745319E52EAD0069EA9F /* EntryViewController.h */,
 				9D03745419E52EAD0069EA9F /* EntryViewController.m */,
+				9D03746319E77CC50069EA9F /* PickerTableViewController.h */,
+				9D03746419E77CC50069EA9F /* PickerTableViewController.m */,
 			);
 			name = UsageExample;
 			sourceTree = "<group>";
@@ -205,8 +231,28 @@
 				9D03745719E53C470069EA9F /* EntryTableViewCell.m */,
 				9D03746019E67A300069EA9F /* ElementTableViewCell.h */,
 				9D03746119E67A300069EA9F /* ElementTableViewCell.m */,
+				9D03746D19E7BAD80069EA9F /* PickerTableViewCell.h */,
+				9D03746E19E7BAD80069EA9F /* PickerTableViewCell.m */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		9D03746919E7B3C70069EA9F /* ElementView */ = {
+			isa = PBXGroup;
+			children = (
+				9D03746A19E7B3FE0069EA9F /* ElementPickerView.h */,
+				9D03746B19E7B3FE0069EA9F /* ElementPickerView.m */,
+			);
+			name = ElementView;
+			sourceTree = "<group>";
+		};
+		9D03747319E7D8E20069EA9F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9D03747019E7D8D50069EA9F /* UIKitUtility.h */,
+				9D03747119E7D8D50069EA9F /* UIKitUtility.m */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,9 +356,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D03744A19E4E80A0069EA9F /* StraightElement.m in Sources */,
+				9D03746C19E7B3FE0069EA9F /* ElementPickerView.m in Sources */,
 				9D03745F19E62EB10069EA9F /* UIToolbar+IndexPath.m in Sources */,
+				9D03747219E7D8D50069EA9F /* UIKitUtility.m in Sources */,
 				9D03745519E52EAD0069EA9F /* EntryViewController.m in Sources */,
 				9D03742319E4E3360069EA9F /* ViewController.m in Sources */,
+				9D03746F19E7BAD80069EA9F /* PickerTableViewCell.m in Sources */,
+				9D03746819E7AC410069EA9F /* PickerElement.m in Sources */,
 				9D03746219E67A300069EA9F /* ElementTableViewCell.m in Sources */,
 				9D03744719E4E7EB0069EA9F /* StraightSection.m in Sources */,
 				9D03742019E4E3360069EA9F /* AppDelegate.m in Sources */,
@@ -320,6 +370,8 @@
 				9D03744319E4E61F0069EA9F /* RootViewController.m in Sources */,
 				9D03745819E53C470069EA9F /* EntryTableViewCell.m in Sources */,
 				9D03741D19E4E3360069EA9F /* main.m in Sources */,
+				9D03747619E7DABE0069EA9F /* UIPickerView+InputView.m in Sources */,
+				9D03746519E77CC50069EA9F /* PickerTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
